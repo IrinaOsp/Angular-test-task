@@ -1,0 +1,10 @@
+<div class="center">
+  <div class="icon-container">
+    <div *ngIf="prefix && iconName">
+      <fa-icon [icon]="[prefix, iconName]"></fa-icon>
+    </div>
+  </div>
+  <button (click)="generateIcon()" [disabled]="isLoading">
+    Show Random Icon
+  </button>
+</div>
